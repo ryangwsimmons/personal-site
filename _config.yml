@@ -54,15 +54,10 @@ plugins:
 author:
   name      : "Ryan Simmons"
   avatar    : "/assets/images/bio-photo.jpg"
-  bio       : "Software developer and Computer Science student at the University of Guelph."
+  bio       : "Software developer; Computer Science student at the University of Guelph."
   location  : "Oakville, ON, Canada"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ryangwsimmons"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/ryangwsimmons/"
+  github    : "ryangwsimmons"
+  linkedin  : "ryangwsimmons"
 
 footer:
   links:
