@@ -1,0 +1,81 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+.layout--home section.page__content {
+    font-size: $type-size-6;
+    ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin-top: initial;
+    }
+
+    h3 {
+        margin-top: initial;
+    }
+
+    h5 {
+        margin-top: initial;
+        font-weight: normal;
+    }
+
+    .resume-section {
+        margin-bottom: 5%;
+    }
+
+    .resume-flex {
+        display: flex;
+        flex-wrap: wrap;
+
+        h3 {
+            margin-top: initial;
+        }
+
+        > * {
+            flex-grow: 1;
+            margin-right: 25%;
+        }
+
+        > *:not(:last-child) {
+            margin-bottom: 2%;
+        }
+
+        @media only screen and (min-width: 1081px) {
+            > * {
+                margin-right: inherit;
+            }
+
+            > *:not(:last-child) {
+                margin-bottom: initial;
+            }
+        }
+    }
+
+    .resume-projects {
+        .resume-projects-title {
+            font-style: italic;
+        }
+    }
+
+    #education-history .resume-flex {
+        align-items: center;
+    }
+
+    #work-experience .work-experience-date {
+        font-style: italic;
+    }
+
+    .resume-section, .resume-projects {
+        ul {
+            margin-bottom: 2%;
+        }
+    }
+}
