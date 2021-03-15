@@ -3,3 +3,5 @@ main:
     url: /projects/
   - title: "Work Experiences"
     url: /work-experiences/
+  - title: "Contact"
+    url: /contact/
