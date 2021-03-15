@@ -84,6 +84,14 @@ defaults:
       layout: single
       author_profile: false
       share: true
+  # _work-experiences
+  - scope:
+      path: ""
+      type: work-experiences
+    values:
+      layout: single
+      author_profile: false
+      share: true
 
 category_archive:
   type: liquid
@@ -97,5 +105,8 @@ atom_feed:
 
 collections:
   projects:
+    output: true
+    permalink: /:collection/:path/
+  work-experiences:
     output: true
     permalink: /:collection/:path/
