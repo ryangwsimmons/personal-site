@@ -1,0 +1,35 @@
+<script type="application/javascript">
+    // Get each download button on the page by splitting the parameters using strings
+    var extensions = "{{ include.extension }}".split(",");
+    var ids = "{{ include.id }}".split(",");
+    var buttons = [];
+
+    ids.forEach(function(id, index) {
+        buttons.push({
+            id: id,
+            extension: extensions[index]
+        });
+    });
+
+    // Create new HTTP request for each button
+    buttons.forEach(function(button) {
+        var linkHttp = new XMLHttpRequest();
+        linkHttp.onreadystatechange = function() {
+            if (linkHttp.readyState == 4 && linkHttp.status == 200) {
+                // Once the HTTP request has been completed, find the release asset with the desired extension
+                var releaseInfo = JSON.parse(linkHttp.responseText);
+                var matchingAssets = releaseInfo.assets.filter(function(asset) {
+                    return new RegExp(".*\." + button.extension + "$").test(asset.name);
+                });
+
+                // Change the download button's link to the download link for the file
+                var downloadBtn = document.getElementById(button.id);
+                downloadBtn.setAttribute("href", matchingAssets[0].browser_download_url);
+            }
+        };
+
+        // Open and send the HTTP request
+        linkHttp.open("GET", "https://api.github.com/repos/ryangwsimmons/{{ include.reponame }}/releases/latest", true);
+        linkHttp.send(null);
+    });
+</script>
