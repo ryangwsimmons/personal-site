@@ -1,11 +1,9 @@
 ---
+title: Resume
 layout: single
+permalink: /resume/
 classes: wide
 ---
-
-{{ content }}
-
-<h1>Resume</h1>
 
 <div class="resume-section" id="technical-skills">
     <h2>Technical Skills</h2>

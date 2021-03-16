@@ -7,8 +7,8 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-.layout--home section.page__content {
-    font-size: $type-size-6;
+meta[content=Resume] + div.page__inner-wrap section.page__content{
+    //font-size: $type-size-6;
     ul {
         margin-top: 0;
         margin-bottom: 0;
@@ -113,5 +113,45 @@
         white-space: nowrap;
         max-width: min-content;
         margin: 0px 5px 0px 5px;
+    }
+}
+
+.layout--splash-home {
+    height: 500px;
+
+    .initial-content {
+        flex: 1;
+    }
+
+    #footer {
+        margin-top: 0;
+    }
+
+    .page__hero--overlay {
+        margin-bottom: 0;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .page-profile-image {
+            img {
+                max-height: 10em;
+                object-fit: contain;
+                border-radius: 50%;
+                border: 7px solid white;
+            }
+        }
+
+        .wrapper {
+            margin-left: initial;
+            margin-right: initial;
+            width: initial;
+        }
+
+        .page__hero-caption {
+            font-family: inherit;
+        }
     }
 }
