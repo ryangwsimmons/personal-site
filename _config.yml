@@ -16,8 +16,8 @@
 title: Ryan Simmons
 email: simmonsrgw@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The personal site of Ryan Simmons, Software Developer and
-  Computer Science student at the University of Guelph.
+  The personal site of Ryan Simmons, software developer and
+  computer science student at the University of Guelph.
 github_username: ryangwsimmons
 minimal_mistakes_skin: default
 search: false
@@ -54,7 +54,7 @@ plugins:
 author:
   name      : "Ryan Simmons"
   avatar    : "/assets/images/bio-photo.jpg"
-  bio       : "Software Developer; Computer Science student at the University of Guelph."
+  bio       : "Software Developer; Computer Science Student at the University of Guelph."
   location  : "Oakville, ON, Canada"
   github    : "ryangwsimmons"
   linkedin  : "ryangwsimmons"
