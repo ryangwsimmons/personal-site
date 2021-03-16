@@ -91,7 +91,7 @@ classes: wide
 <div class="resume-section" id="work-experience">
     <h2>Work Experience</h2>
     <h3>Web Application Developer</h3>
-    Kenna | <span class="work-experience-date">April - August 2019</span>
+    Kenna | <span class="work-experience-date">May - December 2020</span>
     <ul>
         <li>Implemented new software features (front-end and back-end) according to client account team’s design requirements for the 2021 product year.</li>
         <li>Fixed programming bugs in response to feedback from the quality assurance team.</li>
