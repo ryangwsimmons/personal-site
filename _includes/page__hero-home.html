@@ -45,7 +45,11 @@
     </div>
     {% if page.header.profile_image %}
         <div class="page-profile-image">
-            <img src="{{ page.header.profile_image }}"></img>
+            <picture>
+                <source srcset="{{ page.header.profile_image }}.webp" type="image/webp">
+                <source srcset="{{ page.header.profile_image }}.jpg" type="image/jpeg">
+                <img src="{{ page.header.profile_image }}.jpg">
+            </picture>
         </div>
     {% endif %}
   {% if page.header.caption %}
