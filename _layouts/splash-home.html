@@ -2,6 +2,9 @@
 layout: default
 ---
 
+<!-- Modernizr script to detect WebP support in browser -->
+<script src="/assets/js/modernizr.js"></script>
+
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero-home.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
