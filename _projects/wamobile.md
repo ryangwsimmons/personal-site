@@ -4,17 +4,17 @@ excerpt: An Android app to access the University of Guelph's WebAdvisor service.
 header:
   teaser: /assets/images/wamobile/icon.svg
 gallery:
-  - url: /assets/images/wamobile/login.png
-    image_path: assets/images/wamobile/login.png
+  - url: /assets/images/wamobile/login.jpg
+    image_path: assets/images/wamobile/login.jpg
     alt: WAMobile login screen
-  - url: /assets/images/wamobile/news.png
-    image_path: assets/images/wamobile/news.png
+  - url: /assets/images/wamobile/news.jpg
+    image_path: assets/images/wamobile/news.jpg
     alt: WAMobile news screen
-  - url: /assets/images/wamobile/search-for-sections.png
-    image_path: assets/images/wamobile/search-for-sections.png
+  - url: /assets/images/wamobile/search-for-sections.jpg
+    image_path: assets/images/wamobile/search-for-sections.jpg
     alt: WAMobile search for sections screen
-  - url: /assets/images/wamobile/grades.png
-    image_path: assets/images/wamobile/grades.png
+  - url: /assets/images/wamobile/grades.jpg
+    image_path: assets/images/wamobile/grades.jpg
     alt: WAMobile grades screen
 ---
 
