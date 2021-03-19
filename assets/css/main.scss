@@ -128,7 +128,6 @@ meta[content=Resume] + div.page__inner-wrap section.page__content{
     }
 
     .page__hero--overlay {
-        background-color: #000;
         margin-bottom: 0;
         height: 100%;
         display: flex;
@@ -155,12 +154,4 @@ meta[content=Resume] + div.page__inner-wrap section.page__content{
             font-family: inherit;
         }
     }
-}
-
-.webp .layout--splash-home .page__hero--overlay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/splash-background.webp');
-}
-
-.no-webp .layout--splash-home .page__hero--overlay {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/images/splash-background.jpg');
 }
