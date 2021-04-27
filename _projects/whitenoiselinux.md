@@ -12,53 +12,46 @@ gallery:
     alt: WhiteNoiseLinux about window
 ---
 
-A Linux application written using PyQt5 to play white noise (or other ambient sounds) in the background.
+A Linux application that plays white noise (and other ambient sound) audio files in the background.
 
 Supports layering multiple sounds over one another. Sounds automatically loop indefinitely.
 
+
 {% include gallery %}
-
-## Download
-
-<div class="download-button">
-<a href="https://github.com/ryangwsimmons/WhiteNoiseLinux/releases/latest" class="btn btn--primary" id="deb-download">Ubuntu/Debian</a>
-<a href="https://github.com/ryangwsimmons/WhiteNoiseLinux/releases/latest" class="btn btn--primary" id="rpm-download">Fedora/OpenSUSE</a>
-<a href="https://github.com/ryangwsimmons/WhiteNoiseLinux/releases/latest" class="btn btn--primary" id="arch-download">Arch/Manjaro</a>
-</div>
 
 ## Installation
 
-### Ubuntu/Debian
-1. Download the `.deb` file using the button above.
-2. Open a terminal in the folder the file downloaded to.
-3. Run the following command:
+### Distro Packages (Recommended)
 
-```shell
-sudo apt install ./WhiteNoiseLinux.deb
-```
+Use the latest provided package for your distro, available from the [OpenSUSE Build Service](https://software.opensuse.org//download.html?project=home%3Aryangwsimmons%3AWhiteNoiseLinux&package=whitenoiselinux). Click the link, select your distro, and follow the instructions for adding the repository and installing manually. Unless you know what you're doing, don't just grab the binary packages, or else you won't get updates.
 
-### Fedora/OpenSUSE
-1. Download the `.rpm` file using the button above.
-2. Open a terminal in the folder the file downloaded to
-3. Run the following command:
+### AppImage
 
-#### Fedora
-```shell
-sudo dnf install ./WhiteNoiseLinux.rpm
-```
+AppImages are also available from the GitHub [releases page](https://github.com/ryangwsimmons/WhiteNoiseLinux/releases). If your distro is not listed on the page at the OpenSUSE build service, this is the best option for using the application. To run the AppImage:
 
-#### OpenSUSE
-```shell
-sudo zypper install ./WhiteNoiseLinux.rpm
-```
+1. Download the latest `.AppImage` file from the GitHub releases page (linked above).
 
-### Arch/Manjaro
-1. Download the `.pkg.tar.xz` file using the button above.
-2. Open a terminal in the folder the file downloaded to.
-3. Run the following command:
+2. Open a terminal in the location the file downloaded to (usually your Downloads folder) and run the following:
 
-```shell
-sudo pacman -U ./WhiteNoiseLinux.pkg.tar.xz
-```
+   ```shell
+   chmod +x <name_of_file>.AppImage
+   ```
 
-{% include get-download-script extension="deb,rpm,pkg.tar.xz" id="deb-download,rpm-download,arch-download" reponame="whitenoiselinux" %}
+   After this, you should be able to run the program by simply opening the `.AppImage` file.
+
+3. (Optional) Add a menu entry for the application using [`appimaged`](https://github.com/probonopd/go-appimage).
+
+## Usage
+
+On first run, the app creates a `.whitenoiselinux` directory in your home directory. Inside this directory, there is another directory called `sounds`.
+
+Inside this directory, place the sounds you want. These sounds must be 2 channel (stereo) Ogg/Vorbis audio files. If an audio file has a title in its metadata, this title will be used instead of the file name in the interface.
+
+To obtain sounds, I'd recommend the following process:
+
+1. Go on YouTube, and search for "white noise".
+2. Find a few different sounds you like, and download the audio for them with [youtube-dl](https://youtube-dl.org/).
+3. Use [Audacity](https://www.audacityteam.org/) to trim the audio file down to around 2 minutes or so.
+4. Export this new, trimmed audio as an Ogg file.
+5. During the export process, you will be given the option to enter a "Track Title" for the file. You can enter the name you would like for the sound in this field.
+6. Save this audio file in the `~/.whitenoiselinux/sounds` directory.
