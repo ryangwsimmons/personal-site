@@ -25,6 +25,7 @@ gallery:
   - url: /assets/images/wamobile/account-view.jpg
     image_path: assets/images/wamobile/account-view.jpg
     alt: WAMobile account view screen
+project_order: 2
 ---
 
 An Android app to access the University of Guelph's WebAdvisor service.

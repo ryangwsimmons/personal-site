@@ -10,6 +10,7 @@ gallery:
   - url: /assets/images/whitenoiselinux/about.png
     image_path: assets/images/whitenoiselinux/about.png
     alt: WhiteNoiseLinux about window
+project_order: 1
 ---
 
 A Linux application that plays white noise (and other ambient sound) audio files in the background.

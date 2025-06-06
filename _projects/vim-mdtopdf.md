@@ -3,6 +3,7 @@ title: Vim-MdToPdf
 excerpt: A Vim plugin that converts Markdown documents to PDF files
 header:
   teaser: /assets/images/vim-mdtopdf/icon.svg
+project_order: 3
 ---
 
 A plugin for the Vim text editor to convert Markdown documents to PDF files. Supports entry of math using TeX.
